@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-sup{
+    height: 80px;
+    border: 1px solid black;
+}
+
+.part_central{
+    display: flex;
+    flex-direction: row;
+}
+
+.grafica{
+    
+}
