@@ -1,7 +1,7 @@
 from flask import Flask, render_template      
 from flask import Flask
 from flask import render_template
-import tkinter as tk
+import tkinter
 from tkinter import filedialog
 import sys
 
@@ -13,9 +13,15 @@ def home():
     
 @app.route('/upload/')
 def uploaduj():
-    root = tk.Tk()
-    root.withdraw()
-    file_path = filedialog.askopenfilename()
+    root = tkinter.Tk() #esto se hace solo para eliminar la ventanita de Tkinter 
+    root.withdraw() #ahora se cierra 
+    file_path = filedialog.askopenfilename() #abre el explorador de archivos y guarda la seleccion en la variable!
+    
+    #Ahora para guardar el directorio donde se encontraba el archivo seleccionado:
+    match = re.search(r'/.*\..+', file_path)#matches name of file
+    file_position = file_path.find(match.group()) #defines position of filename in file path
+
+    save_path = file_path[0: file_position+1] #extracts the saving path.
     return file_path
  
 if __name__ == "__main__":
