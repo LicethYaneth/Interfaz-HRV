@@ -62,7 +62,7 @@ a:hover{
     color: blue;
     text-decoration: underline;
 }
-.btn{
+.btn {
     padding: 5px;
     text-align: left;
     width: 100px !important;
@@ -73,11 +73,12 @@ a:hover{
     color: white;
     border-radius: 5px;
 }
-.btn > img{
+
+.btn > img {
     height: 15px;
     float: left;
 }
-.btn > span{
+.btn > span {
     margin-left: 5px;
 }
 .btn:hover{

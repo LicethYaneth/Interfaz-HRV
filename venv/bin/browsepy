@@ -1,0 +1,12 @@
+#!"/home/liceth/Documentos/proyectos/Variabilidad de frecuencia cardiaca/DatosVariabilidad/interfaz/venv/bin/python3"
+# EASY-INSTALL-ENTRY-SCRIPT: 'browsepy==0.5.6','console_scripts','browsepy'
+__requires__ = 'browsepy==0.5.6'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('browsepy==0.5.6', 'console_scripts', 'browsepy')()
+    )
