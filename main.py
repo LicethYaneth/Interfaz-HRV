@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask import Flask
 from flask import render_template
 import tkinter
+from mttkinter import mtTkinter as tk
 from tkinter import filedialog
 import sys
 
@@ -13,7 +14,7 @@ def home():
     
 @app.route('/upload/')
 def uploaduj():
-    root = tkinter.Tk() #esto se hace solo para eliminar la ventanita de Tkinter 
+    root = tk.Tk() #esto se hace solo para eliminar la ventanita de Tkinter 
     root.withdraw() #ahora se cierra 
     file_path = filedialog.askopenfilename() #abre el explorador de archivos y guarda la seleccion en la variable!
     
