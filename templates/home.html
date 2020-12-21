@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/style.css') }}">
     <link rel="stylesheet" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,14 +19,14 @@
           <li>
             <ul>
               <li>
-                <button href="#" class="btn btn-primar">
-                  <img src="/static/svg/folder-open.svg" alt="">
-                  <span>Abrir</span>
-                </button>
+                <form action="/upload">
+                  <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                  <img src="/static/svg/save.svg" alt="">
+                  <input type="submit" value="Klik">
+                </form>
               </li>
               <li>
                 <button href="#" class="btn btn-primar">
-                  <img src="/static/svg/save.svg" alt="">
                   <span>Guardar</span>
                 </button>
             </li>
