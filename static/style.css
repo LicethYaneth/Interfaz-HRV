@@ -23,7 +23,6 @@
 .content{
     width: 80vw;
     height: calc(100vh - 80px);
-    border: 1px solid;
     background-color: #e3e3e3;
 }
 .panel{
