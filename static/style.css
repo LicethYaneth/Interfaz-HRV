@@ -8,8 +8,8 @@
     flex-direction: column;
 }
 
-.menu-sup{
-    height: 80px;
+.header{
+    height: 100px;
     border: 1px solid black;
 }
 
@@ -18,6 +18,48 @@
     flex-direction: row;
 }
 
+.content{
+    width: 80vw;
+    height: calc(100vh - 80px);
+    border: 1px solid;
+}
+.panel{
+    min-width: 250px !important;
+}
 .grafica{
-    
+    width: 100%;
+    height: calc(100vh - 280px);
+}
+.img-fluid{
+    width: auto;
+    height: calc(100vh - 280px);
+    margin: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+ul > li{
+    display: block;
+    float: left;
+    width: 80px;
+}
+ul > li > ul > li{
+    height: calc(100px / 3) !important;
+}
+a{
+    color: black;
+    text-decoration: none;
+    transition: 250ms;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.btn{
+    padding: 5px;
+    text-align: left;
+    width: 80px !important;
+    height: auto;
 }
